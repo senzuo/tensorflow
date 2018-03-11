@@ -42,7 +42,7 @@ print(sess.run(hello))
 
 > ImportError: libcublas.so.9.0: cannot open shared object file: No such file or directory 
 
-查阅网上出现此问题应该是tensorflow版本和cuda版本不匹配，但是此处tensorflow1.6和cuda9.0是没有问题的
+查阅网上出现此问题应该是tensorflow版本和cuda版本不匹配，但是此处tensorflow1.6和cuda9.0是没有问题的 \
 倒腾半天后不知道怎么就解决了（有可能是重启）
 
 
