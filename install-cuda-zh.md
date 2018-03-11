@@ -69,7 +69,7 @@ $ export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_P
 
 其他
 ```bash
-export CUDA_HOME=/usr/local/cuda
+$ export CUDA_HOME=/usr/local/cuda
 ```
 
 ### 确认安装
