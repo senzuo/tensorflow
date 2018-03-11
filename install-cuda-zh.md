@@ -39,8 +39,8 @@ $ sudo apt-get install linux-headers-$(uname -r)
 $ sudo update-initramfs -u
 ```
 
-2. 通过暂时在系统内核启动参数添加数字3重启进入级别3（text mode）
-*此处使用了其他方法*
+2. 通过暂时在系统内核启动参数添加数字3重启进入级别3（text mode） \
+*此处使用了其他方法* \
 ps： 准备好runfile文件以及所在目录
 
 	1. 重启电脑，在登录界面 Ctrl Alt F1 进入text mode 
@@ -50,12 +50,38 @@ ps： 准备好runfile文件以及所在目录
 	5. 返回GUI `sudo service lightdm start` + `ctrl alt f7`
 	
 
-
-
-
-
 # 安装后操作
-1. mandatory actions
-	1.1 env setup
+
+## 一定要做的
+
+环境变量
+	`PATH`应当包含 `/usr/local/cuda/bin` 添加此路径到PATH中
+	``` bash
 	$ export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+	```
+	
+	64位机器runfile安装方式需要另一步操作
+	``` bash
 	$ export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+	```
+
+## 推荐操作
+
+### 确认安装
+
+``` bash
+# 确认版本
+$ cat /proc/driver/nvidia/version 
+
+# 编译样例
+cd ~/~/NVIDIA_CUDA-9.1_Samples
+make
+
+# 运行
+# 找到deviceQuery文件运行
+./deviceQuery
+
+```
+
+
+
