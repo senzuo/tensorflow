@@ -80,8 +80,9 @@ make
 # 运行
 # 找到deviceQuery文件运行
 ./deviceQuery
-
 ```
+
+如果显示 `Detected CUDA Capable device` 那么就应该安装完成了
 
 
 
