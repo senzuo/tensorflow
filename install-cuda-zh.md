@@ -72,6 +72,11 @@ $ export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_P
 $ export CUDA_HOME=/usr/local/cuda
 ```
 
+配置立即生效
+``` bash
+$source ~/.bashrc 
+```
+
 ### 确认安装
 
 ``` bash
