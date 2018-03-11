@@ -56,15 +56,16 @@ ps： 准备好runfile文件以及所在目录
 ### 一定要做的
 
 环境变量
-	`PATH`应当包含 `/usr/local/cuda/bin` 添加以下语句到`~/.bashrc`文件最后
-	``` bash
-	$ export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
-	```
-	
-	64位机器runfile安装方式需要另一步操作
-	``` bash
-	$ export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-	```
+
+`PATH`应当包含 `/usr/local/cuda/bin` 添加以下语句到`~/.bashrc`文件最后
+``` bash
+$ export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+```
+
+64位机器runfile安装方式需要另一步操作
+``` bash
+$ export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+```
 
 ### 确认安装
 
