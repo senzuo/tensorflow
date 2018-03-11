@@ -51,3 +51,5 @@ print(sess.run(hello))
 倒腾半天后不知道怎么就解决了（有可能是重启）
 
 
+![installation success](./img/tensorflow.png)
+
