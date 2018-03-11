@@ -14,6 +14,11 @@
 - The libcupti-dev library \
   `未安装成功`
   > Unable to locate package cuda-command-line-tools
+  
+  后直接采用 `sudo apt-get install libcupti-dev` 并且添加环境变量
+  ```bash
+  $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
+  ```
 
 ## pip安装
 选择好所要安装的Python（区分系统自带的还是Anaconda的、Python2还是Python3）
