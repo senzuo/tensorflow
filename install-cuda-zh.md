@@ -1,11 +1,12 @@
 # 安装cuda
 
-# 安装前准备
+## 安装前准备
 
 确认有一个支持CUDA的GPU
 
 ``` bash
 $ lspci | grep -i nvidia
+# output
 # 01:00.0 VGA compatible controller: NVIDIA Corporation Device 1b81 (rev a1)
 # 01:00.1 Audio device: NVIDIA Corporation Device 10f0 (rev a1)
 ```
@@ -13,12 +14,12 @@ $ lspci | grep -i nvidia
 确保系统有正确的内核header和安装开发包
 
 ``` bash Ubuntu
-$ sudo apt-get install linux-headers-$(uname -r)
 # 安装
+$ sudo apt-get install linux-headers-$(uname -r)
 ```
-选择安装方式 -> runfile安装
+选择安装方式 -> **runfile**安装
 
-# Runfile 安装
+## Runfile 安装
 
 > 参考文档
 > http://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html#ubuntu-x86_64-run
@@ -50,12 +51,12 @@ ps： 准备好runfile文件以及所在目录
 	5. 返回GUI `sudo service lightdm start` + `ctrl alt f7`
 	
 
-# 安装后操作
+## 安装后操作
 
-## 一定要做的
+### 一定要做的
 
 环境变量
-	`PATH`应当包含 `/usr/local/cuda/bin` 添加此路径到PATH中
+	`PATH`应当包含 `/usr/local/cuda/bin` 添加以下语句到`~/.bashrc`文件最后
 	``` bash
 	$ export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
 	```
@@ -65,8 +66,6 @@ ps： 准备好runfile文件以及所在目录
 	$ export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 	```
 
-## 推荐操作
-
 ### 确认安装
 
 ``` bash
@@ -74,6 +73,7 @@ ps： 准备好runfile文件以及所在目录
 $ cat /proc/driver/nvidia/version 
 
 # 编译样例
+# 时间有几分钟
 cd ~/~/NVIDIA_CUDA-9.1_Samples
 make
 
