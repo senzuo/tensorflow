@@ -35,14 +35,14 @@ $ sudo apt-get install linux-headers-$(uname -r)
 
 1. 禁用 Nouveau 驱动: 
 
-    创建文件 /etc/modprobe.d/blacklist-nouveau.conf 文件内容为
+创建文件 /etc/modprobe.d/blacklist-nouveau.conf 文件内容为
 
 ``` bash
     blacklist nouveau
     options nouveau modeset=0
 ```
 
-	重新生成 the kernel initramfs:
+重新生成 the kernel initramfs:
 
 ``` bash
 $ sudo update-initramfs -u
@@ -57,10 +57,10 @@ ps： 准备好runfile文件以及所在目录
 
 3. 切换到runfile目录
 
-4. 安装 `$ sudo sh cuda*.run`
+4. 安装 `$ sudo sh cuda*.run` \
 默认全部安装
 
-5. 返回GUI。键入 `$ sudo service lightdm start` 后按 `ctrl alt f7`
+5. 返回GUI. \ 键入 `$ sudo service lightdm start` 后按 `ctrl alt f7`
 	
 
 ## 安装后操作
