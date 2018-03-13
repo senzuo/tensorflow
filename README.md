@@ -8,7 +8,6 @@
 
 - 系统：Ubuntu 16.04 LTS 64bits
 - GPU：GTX 1070
-- 安装方式：runfile
 
 ## 运行GPU支持的Tensorflow的要求
 
