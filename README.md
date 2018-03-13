@@ -20,8 +20,12 @@
 - cuDNN v7.0
 - 计算能力3.0以上的显卡 查看显卡分数 https://developer.nvidia.com/cuda-gpus
 - The libcupti-dev library\
+
+``` bash
+$ sudo apt-get install cuda-command-line-tools
+```
   `未安装成功`
-  > Unable to locate package cuda-command-line-tools
+  > 显示 Unable to locate package cuda-command-line-tools
   
   后直接采用 `sudo apt-get install libcupti-dev` 并且添加环境变量
   ```bash
