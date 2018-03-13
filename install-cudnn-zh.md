@@ -1,4 +1,4 @@
-# 安装Cudnn
+# 安装 cuDNN
 
 > 参考文档 http://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html
 >
