@@ -6,7 +6,7 @@
 
 1. 准备文件 cudnn-9.0-linux-x64-v7.tgz
 2. 点击Extract解压文件到当前目录
-2. 打开终端输入一下命令,复制cudnn文件到CUDA工具包目录
+2. 打开终端输入以下命令,复制cudnn文件到CUDA工具包目录
 ``` bash
 $ sudo cp cuda/include/cudnn.h /usr/local/cuda/include
 $ sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
